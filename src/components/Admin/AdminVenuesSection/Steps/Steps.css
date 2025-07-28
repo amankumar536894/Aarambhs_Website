@@ -1,0 +1,40 @@
+.vendorsetpictitle{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.setvendorprofilepic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px dotted #579581;
+}
+.setvendorprofilepicinput{
+    display: none;
+}
+.profilepicuploadicon{
+    font-size: 2rem;
+    font-weight: 600;
+    color: gray;
+    padding: 3rem ;
+}
+.profilepicuploadedimg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.venue-images-preview{
+    width: 100%;
+    overflow: scroll;
+}
+.venue-images-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    width: 100%;
+    margin-top: 1rem;
+}

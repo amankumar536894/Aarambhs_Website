@@ -1,0 +1,124 @@
+.secondfaq {
+    width: 100%;
+    padding: 5rem 8rem;
+}
+
+.secondfaw-overall {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 20%;
+}
+
+.secondfaq-imgbox {
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 20rem;
+}
+
+.secondfaq-imgbox img {
+    width: 100%;
+    border-radius: 20rem;
+    transform: translate(-1rem, 2rem);
+}
+
+.secondfaq-faq {
+    width: 50%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.seconffaq-each {
+    width: 100%;
+}
+
+.secondfaq-eachtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #579581;
+}
+
+.secondfaq-eachdesc {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 2s ease-in-out;
+}
+
+.fullheight {
+    height: auto;
+}
+
+@media(max-width:1200px) {
+    .secondfaq {
+        padding: 3rem 3rem;
+    }
+
+    .secondfaw-overall {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .secondfaq-imgbox {
+        width: 100%;
+        display: none;
+    }
+
+    .secondfaq-faq {
+        width: 100%;
+        border-radius: 15px;
+        background-color: white;
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media(max-width:676px) {
+    .secondfaq {
+        padding: 3rem 1rem;
+    }
+
+    .secondfaw-overall {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .secondfaq-imgbox {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .secondfaq-faq {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+    .secondfaq-eachtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.secondfaq-eachdesc {
+    font-size: 1rem;
+    font-weight: 500;
+    color: gray;
+    letter-spacing: 1.5px;
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+}

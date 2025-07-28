@@ -1,0 +1,101 @@
+.venuelistsection {
+    width: 100%;
+    padding: 3rem 10rem;
+}
+
+.venuelistbigbox {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3rem;
+    /* background-color: #f2dddf; */
+    background-color: #a5ecd5c3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.listcityleftimg {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.listvenuerightdiv {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 3rem;
+    height: 100%;
+    padding-right: 1rem;
+}
+
+.listvenuerightdiv p {
+    color: var(--main-color);
+    background-color: white;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 20rem;
+}
+
+.listvenuesection_small {
+    width: 5rem;
+    border-radius: 20rem;
+    width: 12rem;
+    border: 1px solid white;
+}
+
+.listvenuesection_small img {
+    width: 100%;
+    border-radius: 20rem;
+    transform: translate(-0.5rem, 0.5rem);
+}
+
+@media (max-width:1300px) {
+    .venuelistsection {
+        padding: 3rem 2rem;
+    }
+
+    .venuelistbigbox {
+        margin-block: 2rem;
+    }
+}
+
+@media(max-width:676px) {
+    .venuelistsection {
+        padding: 3rem 1rem;
+    }
+
+    .venuelistbigbox {
+        flex-direction: column;
+        margin-block: 1rem;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .listcityleftimg {
+        width: 100%;
+    }
+
+    .listvenuerightdiv {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding-right: 0rem;
+        padding: 1rem;
+        position: absolute;
+        top: 11rem;
+    }
+
+    .listvenuerightdiv p {
+        padding: 0.7rem 3rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .listvenuesection_small {
+        display: none;
+    }
+}

@@ -1,0 +1,83 @@
+.popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.752);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popupbox{
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+.whatsappsvg{
+    width: 40px;
+}
+.popuptext{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+.popupinput{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid gray;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;    font-weight: 600;
+    color: gray;
+}
+.popbtn{
+    width: 100%;
+    background-color:#579581 ;
+    color: white;
+    padding: 0.7rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+}
+.popupcutmark{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: gray;
+}
+.popupactive{
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .popupbox{
+        width: 40%;
+    }
+}
+@media (max-width: 992px) {
+    .popupbox{
+        width: 90%;
+    }
+}

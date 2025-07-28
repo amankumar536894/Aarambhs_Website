@@ -1,0 +1,405 @@
+.dash {
+    width: 83%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 3rem 2rem;
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+    .dashboard-header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.dashboard-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.dashboard-header-text {
+    color: #4b5563;
+    margin-top: 4px;
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    position: relative;
+}
+
+@media (min-width: 640px) {
+    .header-actions {
+        margin-top: 0;
+    }
+}
+.header-actions{
+    width: 2.8rem;
+    border: 1px solid white;
+}
+.profilepicimg{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 24px;
+}
+
+.stat-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-title {
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 4px;
+}
+
+.stat-change {
+    color: #059669;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.change-icon {
+    margin-right: 4px;
+}
+
+.stat-icon {
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #579581;
+}
+
+.blue .stat-icon {
+    background-color: #3b82f6;
+}
+
+.emerald .stat-icon {
+    background-color: #10b981;
+}
+
+.amber .stat-icon {
+    background-color: #f59e0b;
+}
+
+.purple .stat-icon {
+    background-color: #8b5cf6;
+}
+
+.stat-icon svg {
+    color: white;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.content-card {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 24px;
+}
+
+.content-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.activities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.activity-indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+.activity-action {
+    color: #111827;
+    font-size: 14px;
+}
+
+.activity-time {
+    color: #6b7280;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+}
+
+.event-title {
+    color: #111827;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.event-date {
+    color: #4b5563;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.event-type {
+    padding: 4px 8px;
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.quick-actions {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 24px;
+}
+
+.quick-actions h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 640px) {
+    .actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .actions-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.action-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.action-button svg {
+    margin-right: 8px;
+}
+
+.action-button span {
+    font-weight: 500;
+}
+
+.blue {
+    background-color: #eff6ff;
+}
+
+.blue:hover {
+    background-color: #dbeafe;
+}
+
+.blue svg {
+    color: #2563eb;
+}
+
+.blue span {
+    color: #1e40af;
+}
+
+.emerald {
+    background-color: #ecfdf5;
+}
+
+.emerald:hover {
+    background-color: #d1fae5;
+}
+
+.emerald svg {
+    color: #059669;
+}
+
+.emerald span {
+    color: #065f46;
+}
+
+.amber {
+    background-color: #fffbeb;
+}
+
+.amber:hover {
+    background-color: #fef3c7;
+}
+
+.amber svg {
+    color: #d97706;
+}
+
+.amber span {
+    color: #92400e;
+}
+
+.purple {
+    background-color: #f5f3ff;
+}
+
+.purple:hover {
+    background-color: #ede9fe;
+}
+
+.purple svg {
+    color: #7c3aed;
+}
+
+.purple span {
+    color: #5b21b6;
+}
+
+.profile-details{
+    width: 12rem;
+    background-color: #579581;
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+.profiledetaailstopmain{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+.profile-details-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile-details-img{
+    width: 2.2rem;
+    border-radius: 50%;
+}
+.profile-details-text{
+    display: flex;
+    flex-direction: column;
+}
+.profile-details-text-name{
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+}
+.profile-details-text-email{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+}
+.profile-moreoptions{
+    color: white;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: #065f46;
+    border-radius: 10px;
+}
+.profile-details-active{
+    display: flex;
+}

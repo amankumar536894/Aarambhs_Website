@@ -1,0 +1,102 @@
+.fulllayout {
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+.leftlayout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 4rem;
+}
+
+.layoutlefttitle {
+    font-family: "Galada", cursive;
+    font-size: 2.5rem;
+    color: #579581;
+}
+
+.layoutrighttitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+
+.layoutbtn {
+    background-color: #579581;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.rightlayoutimg {
+    width: 50%;
+}
+
+@media(max-width:1300px) {
+    .fulllayout {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftlayout {
+        gap: 1rem;
+        padding: 1rem 4rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .fulllayout {
+       flex-direction: column-reverse;
+       padding: 5rem 2rem;
+       gap: 2rem;
+    }
+
+    .leftlayout {
+        width: 100%;
+        padding: 0rem;
+    }
+   
+    .layoutbtn {
+       font-size: 1.5rem;
+        padding: 0.7rem 1.5rem;
+        border-radius: 0.4rem;
+    }
+
+    .rightlayoutimg {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+@media(max-width:676px) {
+    .fulllayout {
+       padding: 3rem 1rem;
+       gap: 2rem;
+    }
+    .layoutlefttitle {
+    font-size: 2rem;
+}
+
+.layoutrighttitle {
+    font-size: 1.1rem;
+    letter-spacing: 0rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+}
+   
+    .layoutbtn {
+        width: 100%;
+        text-align: center;
+       font-size: 1.2rem;
+        padding: 0.9rem 1.5rem;
+        border-radius: 0.8rem;
+    }
+}

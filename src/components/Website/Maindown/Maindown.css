@@ -1,0 +1,131 @@
+.maindownsafe {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.maindown {
+    margin-top: 1rem;
+    width: 100%;
+    height: 55vh;
+    background-image: url('../../../src/assets/maindownback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transform: scaleX(1.5);
+    border-bottom-left-radius: 50% 30rem;
+    border-bottom-right-radius: 50% 30rem;
+}
+
+.maindowncover {
+    width: 100%;
+    height: 100%;
+    background-color: #384a4592;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scaleX(0.6666)
+}
+
+/* ... rest of your CSS ... */
+.down-title-upper {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.down-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Galada", cursive;
+}
+
+.down-paragraph {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.down-paragraph-second {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+}
+
+.down-btn {
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 3rem;
+    padding: 0.7rem 1.5rem;
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 25rem;
+    font-weight: 700;
+}
+
+@media(max-width: 1200px) {
+    .maindown {
+        height: 50vh;
+         border-bottom-left-radius: 50% 20rem;
+        border-bottom-right-radius: 50% 20rem;
+    }
+
+    .maindowncover {
+        padding: 2rem 1rem;
+    }
+
+    .down-title-upper {
+        font-size: 2rem;
+    }
+
+    .down-title {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 2.2rem;
+    }
+
+    .down-paragraph {
+        font-size: 1rem;
+    }
+    
+}
+
+@media(max-width: 676px) {
+    .maindown {
+        height: 50vh;
+        border-bottom-left-radius: 50% 10rem;
+        border-bottom-right-radius: 50% 10rem;
+    }
+    .down-title-upper {
+        font-size: 1.5rem;
+    }
+
+    .down-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .down-paragraph {
+        font-size: 1.1rem;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 1.5rem;
+    }
+
+    .down-paragraph-second {
+        font-size: 1.1rem;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 0.5rem;
+    }
+    
+
+    .down-btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+}

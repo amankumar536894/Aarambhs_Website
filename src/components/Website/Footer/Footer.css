@@ -1,0 +1,176 @@
+.footer {
+    width: 100%;
+    padding: 5rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--main-color);
+}
+
+.linkmainbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.quicklinkmainbox,
+.supportmainbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.quicklinkmainline,
+.supportmainline {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.logofootermainbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerlogo {
+    width: 12rem;
+}
+
+.footerlogodesc {
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.footersociallinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.footersociallinks i {
+    font-size: 0.7rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.emailmainbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.emailmainline {
+    color: white;
+    font-size: 0.95rem;
+}
+
+.emaildescription {
+    font-size: 0.95rem;
+    color: white;
+}
+
+.footeremailinput {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-bottom: 0.5px solid yellow;
+    color: white;
+}
+
+.footeremailinput::placeholder {
+    color: rgb(66, 66, 66);
+}
+.lowerfooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-top: 1.5px solid white;
+    padding: 1rem;
+}
+.lowerfooter p{
+    color: white;
+    font-size: 0.9rem;
+}
+.lowerfooter span{
+    font-weight: 700;
+}
+
+
+@media(max-width: 1300px) {
+    .footer {
+        padding: 5rem 1rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .footer {
+        padding: 5rem 0rem;
+    }
+}
+
+@media(max-width: 676px) {
+    .footer {
+        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .logofootermainbox {
+        order: 1;
+    }
+
+    .linkmainbox {
+        order: 2;
+    }
+
+    .emailmainbox {
+        order: 3;
+    }
+
+    .linkmainbox {
+        flex-direction: column;
+    }
+
+    .quicklinkmainbox,
+    .supportmainbox {
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .quicklinkmainline,
+    .supportmainline {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .footerlogodesc {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .emailmainline {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .footeremailinput {
+        padding: 0.5rem 1rem;
+        width: 90%;
+    }
+}

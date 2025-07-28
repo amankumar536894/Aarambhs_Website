@@ -1,0 +1,184 @@
+.pervenuedetails {
+  width: 100%;
+}
+
+.venuepagename {
+  font-family: "Galada", cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: #579581;
+}
+
+.venuepageaddress {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: rgb(90, 90, 90);
+}
+
+.manystars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: rgb(222, 219, 65);
+}
+
+.venuepagetime {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: rgb(121, 121, 121);
+}
+
+.venuepageimagebox {
+  width: 100%;
+}
+
+.venuepagetopmainimg {
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2px;
+}
+
+.venuepageimgonbtn {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  z-index: 1;
+}
+
+.venuepageimgonbtn div {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #579581;
+  padding: 1rem 2rem;
+  border-radius: 20rem;
+}
+
+.venuepageimgonbtn i {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+.venuepageper-imgbox {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.imgchange {
+  border: 3px solid rgb(162, 162, 162);
+  padding: 3px;
+  transition: all 0.02s ease-in-out;
+}
+
+
+@media (max-width: 1200px) {
+
+  .venuepageimgonbtn {
+    padding: 0 2rem;
+  }
+
+  .venuepageimgonbtn div {
+    gap: 1rem;
+    font-size: 1.1rem;
+  }
+  .venuepagetopmainimg{
+    height: 35vh;
+  }
+}
+
+@media (max-width: 676px) {
+  .venuepagename {
+    font-size: 2.3rem;
+  }
+
+  .venuepageaddress {
+    font-size: 1rem;
+  }
+
+  .manystars {
+    margin-top: 1rem;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .venuepagetime {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
+  }
+
+  .venuepageimgonbtn {
+    top: 75%;
+    padding: 0 0.5rem;
+  }
+
+  .venuepageimgonbtn div {
+    gap: 0.5rem;
+    /* font-size: 0.6rem; */
+    font-size: 2.5vw;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .venuepageimgonbtn i {
+    font-size: 1rem;
+  }
+
+  .venuepageper-imgbox {
+    width: 8rem;
+  }
+}
+
+.sliderimggrid{
+  width: 100%;
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.firsthalfleft{
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+}
+.secondhalfright{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.seconfhalftopgrid{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.seconfhalftopgrid img{
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+}
+

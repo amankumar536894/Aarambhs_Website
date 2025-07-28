@@ -1,0 +1,113 @@
+.planwithaarambhsafe {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.planwithaarambh {
+    margin-top: 5rem;
+    width: 100%;
+    height: 60vh;
+    background-image: url('../../../src/assets/planwithback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transform: scaleX(1.5);
+    border-top-left-radius: 50% 30rem;
+    border-top-right-radius: 50% 30rem;
+}
+
+.planwithaarambhcover {
+    width: 100%;
+    height: 100%;
+    background-color: #2e403b63;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scaleX(0.6666)
+}
+
+.planwithaarambh_title {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.planwithaarambh_main {
+    margin-top: 0rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Galada", cursive;
+}
+
+.planwithaarambh_desc {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0rem;
+}
+
+.planwithaarambh_btn {
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 3rem;
+    padding: 0.7rem 1.5rem;
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 25rem;
+    font-weight: 700;
+}
+
+@media(max-width: 1200px) {
+    .planwithaarambh {
+        height: 50vh;
+        border-top-left-radius: 50% 20rem;
+        border-top-right-radius: 50% 20rem;
+    }
+
+    .planwithaarambhcover {
+        padding: 2rem 1rem;
+    }
+
+    .planwithaarambh_title {
+        font-size: 2rem;
+    }
+
+    .planwithaarambh_main {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 2.2rem;
+    }
+
+    .planwithaarambh_desc {
+        font-size: 1rem;
+    }
+}
+@media(max-width: 676px){
+    .planwithaarambh{
+        height: 50vh;
+        border-top-left-radius: 50% 10rem;
+        border-top-right-radius: 50% 10rem;
+    }
+    .planwithaarambh_title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .planwithaarambh_main {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .planwithaarambh_desc {
+       font-size: 1.1rem;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 1.5rem;
+    }
+    .planwithaarambh_btn{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+}

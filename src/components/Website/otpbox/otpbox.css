@@ -1,0 +1,73 @@
+
+  
+  .otp-box {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .otpboxheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+  }
+  
+  .otpboxtext {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-family: "Raleway", sans-serif;
+    color: gray;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .otp-inputs input:focus {
+    border-color: #579581;
+    box-shadow: 0 0 3px #579581;
+  }
+  
+  .finalotpbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #579581;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .finalotpbtn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .success {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+  }

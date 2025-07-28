@@ -1,0 +1,323 @@
+.editvenuepopup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.editvenuepopup-inner{
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+.editvenuepopup-fullwidth{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.editvenuepopup-halfitem{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.editvenueeverytitle{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.editvenueeveryinput{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #323232;
+    background-color: #f5f5f5;
+}
+.cutadminformicon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+/* Navigation Buttons */
+.editvenuepopup-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.editvenuepopup-nextbtn,
+.editvenuepopup-prevbtn,
+.editvenuepopup-submitbtn {
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.editvenuepopup-nextbtn {
+    width: 100%;
+    background-color: #579581;
+    color: white;
+    text-align: center;
+}
+
+.editvenuepopup-nextbtn:hover {
+    background-color: #4a7c6b;
+}
+
+.editvenuepopup-prevbtn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.editvenuepopup-prevbtn:hover {
+    background-color: #e0e0e0;
+}
+
+.editvenuepopup-submitbtn {
+    background-color: #28a745;
+    color: white;
+    margin-left: auto;
+}
+
+.editvenuepopup-submitbtn:hover {
+    background-color: #218838;
+}
+.editvenuepopup-profilepicbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.editvenuepopup-profilepic{
+    width: 100%;
+    height: 20rem;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.editvenuepopup-profilepic img{
+    width: 20rem;
+}
+.editvenuepopup-profilepiclabel{
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+    cursor: pointer;
+    border: 1px dashed gray;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.editvenuepopup-profilepiclabel input{
+    display: none;
+}
+
+/* Step 3 - Image Management Styles */
+.editvenuepopup-imagesection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.editvenueeverydescription {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.editvenuepopup-addimages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.editvenuepopup-addimageslabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #579581;
+    cursor: pointer;
+    border: 2px dashed #579581;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.editvenuepopup-addimageslabel:hover {
+    background-color: #e9ecef;
+    border-color: #4a7c6b;
+}
+
+.editvenuepopup-addimageslabel input {
+    display: none;
+}
+
+.editvenuepopup-addimageslabel i {
+    font-size: 2rem;
+    color: #579581;
+}
+
+.editvenuepopup-imagesgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.editvenuepopup-imageitem {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+}
+
+.editvenuepopup-imageitem img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.editvenuepopup-imageoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.editvenuepopup-imageitem:hover .editvenuepopup-imageoverlay {
+    opacity: 1;
+}
+
+.editvenuepopup-deletebtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.editvenuepopup-deletebtn:hover {
+    background-color: #c82333;
+}
+
+.editvenuepopup-deletebtn i {
+    font-size: 0.8rem;
+}
+
+.editvenuepopup-imagename {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    word-break: break-word;
+}
+.editVenuePopup-active{
+    display: flex;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .editvenuepopup-inner {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    .editvenuepopup-fullwidth {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .editvenuepopup-halfitem {
+        width: 100%;
+    }
+    
+    .editvenuepopup-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .editvenuepopup-nextbtn,
+    .editvenuepopup-prevbtn,
+    .editvenuepopup-submitbtn {
+        width: 100%;
+        margin: 0;
+    }
+
+    .editvenuepopup-imagesgrid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .editvenuepopup-imageitem img {
+        height: 120px;
+    }
+
+    .editvenuepopup-addimageslabel {
+        padding: 1.5rem;
+    }
+
+    .editvenuepopup-addimageslabel i {
+        font-size: 1.5rem;
+    }
+}

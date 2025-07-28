@@ -1,0 +1,197 @@
+.whyaarambh {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 4rem 11rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.whyaarambhtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.whyaarambhdetails {
+    font-size: 3rem;
+    font-family: "Galada", cursive;
+    color: white;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.whyaarambhbigbox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    margin-block: 3rem;
+}
+
+.whyaarambhbox {
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0rem 2rem;
+    border-radius: 40rem;
+    height: auto;
+    aspect-ratio: 2 /3;
+}
+
+.whyaarambhbox svg {
+    width: 5rem;
+    fill: white;
+}
+
+.whyaarambhbox p {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.whyaarambhbox:hover {
+    background-color: white;
+}
+
+.whyaarambhbox:hover p {
+    color: var(--main-color);
+}
+
+.whyaarambhbox:hover svg {
+    fill: var(--main-color);
+}
+
+
+.whytrust {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whytrust p {
+    margin-top: 1rem;
+    color: var(--main-color);
+    background-color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem 5rem;
+    border-radius: 20rem;
+}
+.rightcircle{
+    position: absolute;
+    width: 50%;
+    height: 20rem;
+    border: 2px solid white;
+    border-radius: 20rem;
+    right: -10%;
+    top: -10rem;
+}
+.leftcircle{
+    position: absolute;
+    width: 25%;
+    height: 25vw;
+    border: 2px solid white;
+    border-radius: 20rem;
+    left: -12.5%;
+    bottom: -12.5vw;
+}
+
+@media(max-width: 1300px) {
+    .whyaarambh {
+        padding: 4rem 7rem;
+    }
+
+    .whytrust p {
+        font-size: 1.7rem;
+        padding: 1.1rem 6rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .whyaarambh {
+        padding: 4rem 2rem;
+    }
+
+    .whyaarambhdetails {
+        margin-top: 1rem;
+    }
+
+    .whytrust p {
+        font-size: 1.7rem;
+        padding: 1.1rem 6rem;
+    }
+
+    .whyaarambhbigbox {
+        gap: 2rem;
+    }
+
+    .whyaarambhbox {
+        gap: 3rem;
+        padding: 0rem 1rem;
+        aspect-ratio: 2 /3;
+    }
+
+    .whyaarambhbox svg {
+        width: 4rem;
+    }
+
+    .whyaarambhbox p {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+@media(max-width:676px) {
+    .whyaarambh {
+        padding: 2rem 1rem;
+    }
+
+    .whyaarambhtitle {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .whyaarambhdetails {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .whyaarambhbigbox {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        margin-block: 1rem;
+        overflow-x: scroll;
+    }
+
+    .whyaarambhbox {
+        gap: 2rem;
+        padding: 0rem 1rem;
+    }
+
+    .whyaarambhbox svg {
+        width: 4rem;
+    }
+
+    .whyaarambhbox p {
+         font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .whytrust p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1rem 3rem;
+        text-align: center;
+    }
+    .rightcircle, .leftcircle{
+        display: none;
+    }
+}

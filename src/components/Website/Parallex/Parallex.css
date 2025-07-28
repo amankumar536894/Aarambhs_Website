@@ -1,0 +1,101 @@
+.parallex {
+    background-image: url('../../../assets/paraleximage.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallexcover {
+    /* background-color: #220a10c9; */
+    background-color: #2e403b63;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallexmain {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.parallextitle {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-family: "Galada", cursive;
+    color: white;
+}
+
+.parallexdetails {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+.parallexbtn {
+    color: var(--main-color);
+    text-align: center;
+    padding: 0.7rem 3rem;
+    background-color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    border-radius: 20rem;
+}
+
+@media(max-width: 1300px) {
+    .parallexcover {
+        padding: 6rem 0rem;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .parallexmain {
+        font-size: 1.7rem;
+    }
+
+    .parallextitle {
+        font-size: 3.5rem;
+    }
+
+    .parallexdetails {
+        font-size: 1.3rem;
+    }
+
+    .parallexbtn {
+        padding: 0.8rem 8rem;
+        font-size: 1.7rem;
+        margin-top: 3rem;
+    }
+}
+
+
+@media(max-width: 676px) {
+    .parallexcover {
+    padding: 3rem 1rem;
+}
+    .parallexmain {
+        font-size: 1.2rem;
+    }
+
+    .parallextitle {
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+    }
+
+    .parallexdetails {
+        font-size: 1rem;
+    }
+
+    .parallexbtn {
+        padding: 0.8rem 5rem;
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+    }
+}

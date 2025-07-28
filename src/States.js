@@ -1,0 +1,32 @@
+const states = {
+    "Andhra Pradesh": ["Amaravati", "Visakhapatnam", "Tirupati"],
+    "Arunachal Pradesh": ["Itanagar", "Naharlagun", "Pasighat"],
+    "Assam": ["Dispur", "Guwahati", "Jorhat"],
+    "Bihar": ["Patna", "Gaya", "Muzaffarpur", "Bhagalpur", "Darbhanga"],
+    "Chhattisgarh": ["Raipur", "Bhilai", "Bilaspur"],
+    "Goa": ["Panaji", "Margao", "Vasco da Gama"],
+    "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Gandhinagar"],
+    "Haryana": ["Chandigarh", "Faridabad", "Gurugram"],
+    "Himachal Pradesh": ["Shimla", "Dharamshala", "Manali"],
+    "Jharkhand": ["Ranchi", "Jamshedpur", "Dhanbad"],
+    "Karnataka": ["Bengaluru", "Mysuru", "Hubballi", "Mangaluru", "Belagavi"],
+    "Kerala": ["Thiruvananthapuram", "Kochi", "Kozhikode", "Thrissur", "Kollam"],
+    "Madhya Pradesh": ["Bhopal", "Indore", "Jabalpur"],
+    "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Nashik", "Aurangabad"],
+    "Manipur": ["Imphal", "Thoubal", "Churachandpur"],
+    "Meghalaya": ["Shillong", "Tura", "Jowai"],
+    "Mizoram": ["Aizawl", "Lunglei", "Saiha"],
+    "Nagaland": ["Kohima", "Dimapur", "Mokokchung"],
+    "Odisha": ["Bhubaneswar", "Cuttack", "Rourkela"],
+    "Punjab": ["Chandigarh", "Ludhiana", "Amritsar"],
+    "Rajasthan": ["Jaipur", "Jodhpur", "Udaipur", "Kota", "Ajmer"],
+    "Sikkim": ["Gangtok", "Namchi", "Gyalshing"],
+    "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem"],
+    "Telangana": ["Hyderabad", "Warangal", "Nizamabad"],
+    "Tripura": ["Agartala", "Udaipur", "Dharmanagar"],
+    "Uttar Pradesh": ["Lucknow", "Kanpur", "Varanasi", "Agra", "Prayagraj"],
+    "Uttarakhand": ["Dehradun", "Haridwar", "Nainital"],
+    "West Bengal": ["Kolkata", "Howrah", "Durgapur", "Asansol", "Siliguri"]
+  }
+
+  export default states;

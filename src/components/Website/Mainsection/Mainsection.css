@@ -1,0 +1,160 @@
+.mainsection {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../../../assets/after.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainsectioncontent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #46051aa4; */
+    background-color: #2e403b63;
+    padding: 0 16rem;
+}
+
+.maintitle {
+    font-family: "Galada", cursive;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.maininputfield {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0.2rem 0.3rem;
+    border-radius: 20rem;
+    margin-top: 2rem;
+}
+
+.eventtypebox,
+.citybox {
+    width: 40%;
+    overflow-y: hidden;
+    outline: none;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.642);
+
+    appearance: none;
+    /* For modern browsers */
+    -webkit-appearance: none;
+    /* For Safari and Chrome */
+    -moz-appearance: none;
+    border-radius: 20rem;
+
+
+}
+
+.boxoverall {
+    height: 3rem;
+    width: 100%;
+    overflow-y: none;
+}
+
+option {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+
+.mainsearchbtn {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 20rem;
+    padding: 0.7rem 0.7rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1300px) {
+    .mainsection {
+        height: 90vh;
+    }
+
+    .mainsectioncontent {
+        padding: 0 10rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mainsection {
+        height: 60vh;
+    }
+
+    .mainsectioncontent {
+        padding: 0 2rem;
+    }
+
+    .maintitle {
+        font-size: 2.5rem;
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 676px) {
+    .mainsection {
+        height: 80vh;
+    }
+
+    .mainsectioncontent {
+        padding: 0 1rem;
+    }
+
+    .maintitle {
+        font-size: 1.5rem;
+        padding: 0 0rem;
+        font-weight: 500;
+    }
+
+    .maininputfield {
+        width: 90%;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 0rem;
+        margin-top: 2rem;
+        overflow: hidden;
+    }
+
+    .eventtypebox,
+    .citybox {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+
+        appearance: auto;
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+    }
+
+    .citybox {
+        border-top: 0.5px solid gray;
+    }
+
+    .mainsearchbtn {
+        width: 100%;
+        border-radius: 0rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}

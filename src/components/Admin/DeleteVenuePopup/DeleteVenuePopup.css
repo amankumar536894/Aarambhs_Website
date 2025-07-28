@@ -1,0 +1,47 @@
+.deletevenuepopup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.deletevenuepopup-inner{
+    position: relative;
+    padding: 32px;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+}
+.deletevenuepopup-inner-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #323232;
+    text-align: center;
+}
+.deletevenuepopup-inner-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.deletevenuepopup-inner-buttons-cancel, .deletevenuepopup-inner-buttons-delete{
+    color: rgb(47, 47, 47);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(47, 47, 47);
+}
+.deletevenuepopup-inner-buttons-delete{
+    background-color: rgb(255, 76, 76);
+    border: none;
+    color: white;
+}
+.deletevenuepopup-active{
+    display: flex;
+}

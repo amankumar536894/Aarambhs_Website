@@ -1,0 +1,91 @@
+.themesouter {
+    width: 100%;
+    background-color: #f6f6ef;
+    padding: 0rem 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.embla_slide_imagebox{
+    width: 100%;
+    overflow: hidden;
+}
+.embla_slide_imagebox img {
+  transition: transform 0.3s ease;
+}
+.embla_slide_imagebox:hover img {
+  transform: scale(1.15);
+}
+.emblaforcolor{
+    background-color: #ece3d9;
+}
+
+.themes {
+    width: 100%;
+    padding: 3rem 8rem;
+}
+
+.forbottom {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.embla__buttons {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: right;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.letsgo {
+    border: none;
+}
+
+.embla__buttons i {
+    color: white;
+    background-color: var(--main-color);
+    padding: 0.1rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 20rem;
+}
+
+@media(max-width: 1300px) {
+    .themes {
+        padding: 3rem 0rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .themes {
+        padding: 3rem 0rem;
+    }
+
+    .embla__buttons {
+        margin-top: 0rem;
+    }
+}
+
+@media(max-width: 676px) {
+    .themesouter {
+        padding: 2rem 1rem;
+    }
+
+    .themes {
+        padding: 0rem 0rem;
+    }
+
+    .embla__buttons {
+        margin-top: 0rem;
+    }
+    
+    .embla__buttons {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .embla__buttons i {
+        padding: 0.1rem 2rem;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,263 @@
+.venueform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 4rem;
+    gap: 5rem;
+}
+
+.venueformleft,
+.venueformright {
+    width: 50%;
+}
+
+.venueleftformbtns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+.venueleftformbtns i{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.venueleftformbtns p {
+    width: 100%;
+    background-color: #579581;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.3rem 2rem;
+    border-radius: 20rem;
+    color: white;
+    font-size: 0.97rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+.justoppo p{
+    background-color: white;
+    color: #579581;
+    padding: 1rem 2rem;
+}
+
+.venueleftformdetails {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+    border: 2px solid #579581;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.venueleftformdetails p {
+    width: 100%;
+    background-color: #579581;
+    color: white;
+    padding: 1.3rem 1.5rem;
+    border-radius: 1.6rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.venueformright {
+    padding: 2rem 3rem;
+    background-color: #579581;
+    border-radius: 2rem;
+}
+
+.formnametitle {
+    font-size: 2rem;
+    color: white;
+    font-family: "Galada", cursive;
+}
+
+.venueformdiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.formvenueinput {
+    /* Updated for the new date picker */
+    width: 100%;
+    position: relative; 
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-top: 1.8rem;
+    color: gray;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* To center the text vertically */
+}
+
+.formvenueinput label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: gray;
+}
+
+/* NEW CSS RULES FOR THE CUSTOM DATE PICKER */
+.date-text {
+  /* Sets the text style for the placeholder and selected date */
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hidden-date-input {
+  /* This is the key part - hides the input but keeps it interactive */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Makes it completely invisible */
+  cursor: pointer;
+}
+/* END OF NEW CSS */
+
+.formselectclass {
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: gray;
+}
+
+.finalformbtn {
+    color: white;
+    background-color: #0e3f2f;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media(max-width:1300px) {
+    .venueform {
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+
+    .venueleftformbtns {
+        gap: 2rem 2rem;
+    }
+
+    .venueleftformbtns p {
+        padding: 1.3rem 2rem;
+        border-radius: 20rem;
+        font-size: 0.9rem;
+    }
+
+    .venueleftformdetails {
+        margin-top: 2rem;
+        padding: 1.5rem 2rem;
+        gap: 1.5rem;
+    }
+
+    .venueleftformdetails p {
+        font-size: 1.2rem;
+    }
+
+    .venueformright {
+        padding: 2rem 2rem;
+    }
+
+    .venueformdiv {
+        gap: 1.5rem;
+    }
+
+}
+
+@media(max-width:1200px) {
+    .venueform {
+        flex-direction: column;
+    }
+
+    .venueformleft,
+    .venueformright {
+        width: 100%;
+    }
+}
+
+@media(max-width:676px) {
+    .venueform {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .venueformleft,
+    .venueformright {
+        width: 100%;
+    }
+
+    .venueleftformbtns {
+        gap: 1.5rem 1rem;
+    }
+
+    .venueleftformbtns p {
+        padding: 0.8rem 0.5rem;
+        font-size: 3vw;
+        gap: 0.5rem;
+    }
+
+    .venueleftformdetails {
+        margin-top: 1.5rem;
+        padding: 1rem 0.5rem;
+        gap: 1.5rem;
+    }
+
+    .venueleftformdetails p {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .venueformright {
+        padding: 1.2rem 1rem;
+    }
+
+    .formnametitle {
+        font-size: 2.8rem;
+        color: white;
+        font-family: "Galada", cursive;
+    }
+
+    .venueformdiv {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+
+    .formvenueinput {
+        padding: 0.8rem 1rem;
+        border-radius: 0.3rem;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .formselectclass {
+        padding: 0.8rem 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .finalformbtn {
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,60 @@
+.upperheader {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 4rem;
+    gap: 1rem;
+}
+
+.listbtn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.loginbtn {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+@media(max-width: 1200px) {
+    .upperheader {
+        padding: 0.5rem 4rem;
+        display: none;
+        
+    }
+
+    .listbtn {
+        padding: 0.7rem 1.5rem;
+        border-radius: 20rem;
+    }
+
+    .loginbtn {
+        font-weight: 600;
+    }
+}
+@media(max-width: 676px) {
+    .upperheader {
+        gap: 1rem;
+        padding: 0.5rem 1.5rem;
+        display: none;
+    }
+
+    .listbtn {
+        padding: 0.2rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .loginbtn {
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: none;
+    }
+}

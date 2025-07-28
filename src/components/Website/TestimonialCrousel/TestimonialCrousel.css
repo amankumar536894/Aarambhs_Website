@@ -1,0 +1,48 @@
+.testimonialcrousel{
+    width: 100%;
+    padding: 3rem 0;
+    overflow-x: hidden;
+}
+
+.testimonialcrouselsection{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.eachcrouselsectiongo{
+    position: relative;
+}
+.eachcrouselsectiongo-inner{
+    display: flex;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.crouseleft:hover,
+.crouseright:hover {
+  animation-play-state: paused;
+}
+
+.crouseleft{
+    animation: scroll-left 20s linear infinite;
+}
+.crouseright{
+    animation: scroll-right 20s linear infinite;
+}
+

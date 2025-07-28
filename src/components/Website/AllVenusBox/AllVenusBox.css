@@ -1,0 +1,98 @@
+.allvenusbox {
+    width: 100%;
+    padding: 2rem 9rem;
+}
+
+.topvenusboxdetails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topvenusboxdetails-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.inputsearch {
+    display: flex;
+    gap: 0.5rem;
+    border: 0.5px solid gray;
+    padding: 0.8rem 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.inputsearch input {
+    width: 15rem;
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+.topvenusboxdetails-lefttop {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.topvenusboxdetails-leftdown {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(88, 88, 88);
+}
+
+.allcardswidth {
+    width: 100%;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media(max-width:1300px) {
+    .allvenusbox {
+        padding: 2rem 3rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .allvenusbox {
+        padding: 2rem 1rem;
+    }
+
+    .allcardswidth {
+        padding: 2rem 0;
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width:676px) {
+    .allvenusbox {
+        padding: 1rem 1rem;
+    }
+
+    .allcardswidth {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .topvenusboxdetails {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .inputsearch {
+        padding: 0.8rem 0.5rem;
+        width: 100%;
+    }
+
+    .inputsearch input {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}

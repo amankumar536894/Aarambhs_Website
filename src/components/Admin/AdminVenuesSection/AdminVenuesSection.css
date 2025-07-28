@@ -1,0 +1,164 @@
+.adminvenuessection{
+    width: 83%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 2rem;
+    background-color: #F9FAFB;
+}
+.coursepagemain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coursepagemaintitle {
+    font-size: 1.5rem;
+    /* text-2xl */
+    font-weight: 700;
+    /* font-bold */
+    color: #111827;
+}
+
+.coursemainpara {
+    color: #4B5563;
+    /* text-gray-600 */
+    margin-top: 0.25rem;
+    /* mt-1 → 4px */
+}
+
+.courseadbtn {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border: none;
+    /* px-4 */
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    /* py-2 */
+    padding-bottom: 0.5rem;
+    background-color: #579581;
+    /* bg-blue-600 */
+    color: #FFFFFF;
+    /* text-white */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    margin-top: 0rem;
+    /* mt-4 */
+    gap: 0.5rem;
+    /* space-x-2 → 8px horizontal gap between children */
+}
+
+.courseadbtn:hover {
+    background-color: #3e6559;
+}
+.nextvendorbtns{
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.nextvendorbtns div{
+    width: 50%;
+    background-color: #579581;
+}
+
+@media (max-width: 640px) {
+    .coursepagemain {
+        flex-direction: column;
+    }
+    .courseadbtn {
+        margin-top: 1rem;
+    }
+}
+
+.coursescontainer{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.coursesbox{
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0.5px solid rgba(128, 128, 128, 0.467);
+    background-color: white;
+    border-radius: 0.6rem;
+}
+.leftcoursebox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.eachboxtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.eachboxdesc{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(72, 72, 72);
+}
+.courseperboxdowndetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(72, 72, 72);
+    font-family: "Roboto", sans-serif;
+}
+.rightcoursebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.courseeditbtn, .coursedeletebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 0.5px solid rgba(128, 128, 128, 0.718);
+    padding:0.2rem 0.5rem;
+    border-radius: 5px;
+    color: rgba(45, 45, 45, 0.889);
+    cursor: pointer;
+}
+.editdelete{
+    width: 1.1rem;
+}
+.coursedeletebtn{
+    color: #579581;
+}
+.facultydesignation{
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #579581;
+    color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+}

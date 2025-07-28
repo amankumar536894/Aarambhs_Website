@@ -1,0 +1,40 @@
+.videostories {
+    width: 100%;
+    padding: 5rem 5rem;
+    padding-top: 0;
+}
+
+.videostoriesbox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.videostoryper {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media(max-width:1300px) {
+    .videostories {
+        padding: 5rem 1rem;
+    }
+
+    .videostoriesbox {
+        gap: 2rem;
+    }
+}
+
+@media(max-width:676px) {
+    .videostories {
+        padding: 2rem 1rem;
+    }
+
+    .videostoriesbox {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+}

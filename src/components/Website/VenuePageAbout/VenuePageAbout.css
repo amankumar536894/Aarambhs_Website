@@ -1,0 +1,83 @@
+.venuepageabout {
+    width: 100%;
+    padding: 4rem 7rem;
+}
+
+.venuepageabouttitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(82, 82, 82);
+}
+
+.venuepageaboutdesc {
+    font-family: "Galada", cursive;
+    color: #579581;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.venuepageaboutcontent {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    color: rgb(100, 100, 100);
+    overflow: hidden;
+}
+
+.aboutpagedetailsredmore {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+@media(max-width:1200px) {
+    .venuepageabout {
+        padding: 4rem 3rem;
+    }
+
+    .venuepageabouttitle {
+        font-size: 1.5rem;
+    }
+
+    .venuepageaboutcontent {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .aboutpagedetailsredmore {
+        margin-top: 0.5rem;
+    }
+}
+@media(max-width:676px) {
+    .venuepageabout {
+        padding: 3rem 1rem;
+    }
+
+    .venuepageabouttitle {
+        font-size: 1.2rem;
+    }
+
+    .venuepageaboutcontent {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .venuepageaboutdesc{
+        line-height: 3rem;
+    }
+
+    .aboutpagedetailsredmore {
+        margin-top: 0rem;
+        font-size: 1.1rem;
+        width: 100%;
+        color: white;
+        padding: 0.5rem;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #579581;
+    }
+}
