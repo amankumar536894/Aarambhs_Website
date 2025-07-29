@@ -18,7 +18,7 @@ const AdminLoggin = () => {
     }
     setError("");
     try {
-      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/admin/login`, {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/admin/login`, {
         phone,
         password
       });

@@ -1,6 +1,5 @@
 import React from 'react'
 import './EachVenueCard.css'
-import cardimage from '../../../assets/cardimage.avif'
 import { Link } from 'react-router-dom'
 
 const EachVenueCard = ({item}) => {
@@ -15,7 +14,7 @@ const EachVenueCard = ({item}) => {
         <>
         <Link className='link' to={`/venues/${convertToSlug(item.name)}/${item._id}`} >
             <div className="eachvenuecard">
-                <img src={item.profilePic} />
+                <img src={item.profilePic} alt={item.name} />
                 <div className='cardnamesdetail'>
                     <p className='cardmaintitle'>{item.name}</p>
                     <div className='cardratingbox'>

@@ -28,6 +28,8 @@ const AdminVenuesSection = () => {
     const [venues, setVenues] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [searchTimeout, setSearchTimeout] = useState(null);
 
     useEffect(() => {
         const fetchVenues = async () => {
@@ -51,6 +53,54 @@ const AdminVenuesSection = () => {
         fetchVenues();
     }, []);
 
+    const fetchVenuesSearch = async (query) => {
+        if (!query.trim()) {
+            // If search is empty, fetch all venues
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/venues`);
+            if (!response.ok) throw new Error('Failed to fetch venues');
+            const data = await response.json();
+            if (data.success) {
+                setVenues(data.data);
+            }
+            return;
+        }
+
+        try {
+            const token = localStorage.getItem('token_admin') || localStorage.getItem('token_team');
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/venues/search/all?q=${encodeURIComponent(query)}`, {
+                headers: {
+                    ...(token && { 'Authorization': `Bearer ${token}` })
+                }
+            });
+            if (!response.ok) throw new Error('Failed to search venues');
+            const data = await response.json();
+            if (data.success) {
+                setVenues(data.data);
+            } else {
+                setError('Failed to search venues');
+            }
+        } catch (err) {
+            setError(err.message);
+        }
+    };
+
+    const handleSearchChange = (e) => {
+        const query = e.target.value;
+        setSearchQuery(query);
+        
+        // Clear existing timeout
+        if (searchTimeout) {
+            clearTimeout(searchTimeout);
+        }
+        
+        // Set new timeout for debounced search
+        const timeout = setTimeout(() => {
+            fetchVenuesSearch(query);
+        }, 500);
+        
+        setSearchTimeout(timeout);
+    };
+
     const [venueData, setVenueData] = useState({
         brand_name: '',
         address: '',
@@ -59,7 +109,6 @@ const AdminVenuesSection = () => {
         non_veg_price: '',
         city: '',
         status: '',
-        contact_number: '',
         // moved to SteptwoRemaining:
         capacity: '',
         parking: '',
@@ -159,8 +208,8 @@ const AdminVenuesSection = () => {
                 return;
             }
             setVenues(prev => [data.data, ...prev]);
-            setFormon(false);
-            setStep(1);
+        setFormon(false);
+        setStep(1);
             setVenueData({
                 brand_name: '',
                 address: '',
@@ -169,7 +218,6 @@ const AdminVenuesSection = () => {
                 non_veg_price: '',
                 city: '',
                 status: '',
-                contact_number: '',
                 capacity: '',
                 parking: '',
                 rooms: '',
@@ -237,7 +285,7 @@ const AdminVenuesSection = () => {
 
                 <div className='adminsearchcontainer'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-search-icon lucide-search adminsearchicon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
-                    <input type='text' placeholder='Search Venues' />
+                    <input type='text' placeholder='Search Venues' value={searchQuery} onChange={handleSearchChange} />
                 </div>
 
 
